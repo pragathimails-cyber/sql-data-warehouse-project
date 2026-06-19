@@ -33,6 +33,51 @@ Sales Trends: Mapping revenue patterns over time to forecast future growth.
 
 These insights deliver critical business metrics directly to stakeholders, transforming raw data into a powerful tool for strategic decision-making.
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+🚀 Project Requirements
+
+Building the Data Warehouse (Data Engineering)
+
+Objective
+Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+
+Specifications**
+
+* Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
+* Data Quality: Cleanse and resolve data quality issues prior to analysis.
+* Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
+* Scope: Focus on the latest dataset only; historization of data is not required.
+* Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Repository Structure
+
+data-warehouse-project/
+├── datasets/                   # Raw datasets used for the project (ERP and CRM data)
+│   ├── CRM_dataset/
+│   ├── ERP_dataset/
+│   └── placeholder
+├── docs/                       # Project documentation and architecture details
+│   ├── data_catalog.md         # Catalog of datasets, including field descriptions and metadata
+│   └── placeholder
+├── scripts/                    # SQL scripts for ETL and transformations
+│   ├── bronze/                 # Scripts for extracting and loading raw data
+│   ├── gold/                   # Scripts for creating analytical models
+│   ├── silver/                 # Scripts for cleaning and transforming data
+│   ├── init_database.sql       # Script to initialize the database structure
+│   └── placeholder
+├── tests/                      # Test scripts and quality files
+│   ├── placeholder
+│   ├── quality_check_silver.sql
+│   └── quality_checks_gold.sql
+├── LICENSE                     # License information for the repository
+└── README.md                   # Project overview and instructions
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 📜 License
 This project is open-source and licensed under the MIT License. Feel free to explore, modify, fork, or use this code for your own projects with proper attribution.
 
